@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --highlight-color: #e74c3c;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+}
+
+.animated_button {
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated_button:hover {
+    background-color: var(--highlight-color);
+    transform: scale(1.1);
+}
+
+.contenedorimg {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: var(--text-color);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.rodapie__container {
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+    color: white;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.rodapie__titulo {
+    color: white;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.skills,
+.hobbies {
+    padding: 130px 0 50px;
+    margin-top: 50px; /* Espacio entre secciones */
+    height: 100vh;
+    align-items: center;
+
+}
+
+.aimagen {
+    max-width: 400px; /*  ancho máximo de la imagen */
+    max-height: 400px; /*  alto máximo de la imagen */
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#text-column {
+    width: 50%; /* valor ancho */
+    max-width: 500px; /* limitar el ancho máximo */
+    margin: 0 auto; /* centra el div horizontalmente */
+}

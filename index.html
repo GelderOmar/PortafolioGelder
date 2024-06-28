@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="mi-animacion.js"></script>
     <title>Portafolio Gelder Tubac</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="#inicio"></a>
+            <div class="navbar_opciones">
+                <button class="animated_button">GelderTS</button>
+                <button class="animated_button">Skills</button>
+                <button class="animated_button">Hobbies</button>
+                <button class="animated_button">Formación</button>
+                <button class="animated_button">Proyectos</button>
+            </div>
+        </nav>
+    </header>
+    <section id="inicio" class="infheader">
+        <div class="column text" id="text-column">
+            <h1 id="titulo"></h1>
+            <h2 id="desc"></h2>
+        </div>
+        <div class="column image" id="image-column">
+            <img src="./img/a.png" alt="logo" class="aimagen" id="image">
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="imgskills">
+            <div class="contenedorimg">
+                <img src="./img/skills/nodejs.png" alt="NodeJs" class="skillsimg">
+                <p class="txtSkills">NodeJs</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/html.png" alt="HTML5" class="skillsimg">
+                <p class="txtSkills">HTML5</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/jsvascript.png" alt="JavaScript" class="skillsimg">
+                <p class="txtSkills">JavaScript</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/laravel.png" alt="Laravel" class="skillsimg">
+                <p class="txtSkills">Laravel</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/php.png" alt="PHP" class="skillsimg">
+                <p class="txtSkills">PHP</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/react.png" alt="React" class="skillsimg">
+                <p class="txtSkills">React</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/skills/sql.png" alt="SQL" class="skillsimg">
+                <p class="txtSkills">SQL</p>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies" class="hobbies">
+        <h2>Hobbies</h2>
+        <div class="imgskills">
+            <div class="contenedorimg">
+                <img src="./img/hobbies/saxofon.png" alt="Tocar saxofón" class="skillsimg">
+                <p class="txtSkills">Tocar saxofón</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/hobbies/piano.png" alt="Tocar piano" class="skillsimg">
+                <p class="txtSkills">Tocar piano</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/hobbies/serie.png" alt="Ver series" class="skillsimg">
+                <p class="txtSkills">Ver series</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/hobbies/futbol.png" alt="Fútbol" class="skillsimg">
+                <p class="txtSkills">Fútbol</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/hobbies/audifono.png" alt="Oír música" class="skillsimg">
+                <p class="txtSkills">Oír música</p>
+            </div>
+            <div class="contenedorimg">
+                <img src="./img/hobbies/nadar.png" alt="Nadar" class="skillsimg">
+                <p class="txtSkills">Nadar</p>
+            </div>
+        </div>
+    </section>
+    <footer class="rodapie__container">
+        <h3 class="rodapie__titulo">Contacto</h3>
+        <p>Email: gelderomarts@gmail.com</p>
+        <p>Teléfono: +502 42740796</p>
+    </footer>
 </body>
 </html>
